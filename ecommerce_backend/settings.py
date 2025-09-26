@@ -21,6 +21,10 @@ INSTALLED_APPS = [
     'drf_yasg',
     'users',
     'products',
+    "rest_framework_simplejwt",
+    "catalog",
+    "drf_spectacular",
+    "drf_spectacular_sidecar",
 ]
 
 MIDDLEWARE = [
@@ -80,6 +84,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
+
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
@@ -89,6 +94,7 @@ REST_FRAMEWORK = {
         'rest_framework.filters.SearchFilter',
     ),
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
     'PAGE_SIZE': 10,
 }
 
