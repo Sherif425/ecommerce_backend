@@ -97,9 +97,9 @@ REST_FRAMEWORK = {
         'rest_framework.filters.OrderingFilter',
         'rest_framework.filters.SearchFilter',
     ),
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'DEFAULT_PAGINATION_CLASS': None,  #'rest_framework.pagination.PageNumberPagination',
      "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
-    'PAGE_SIZE': 10,
+    # 'PAGE_SIZE': 10,
 }
 
 SIMPLE_JWT = {
