@@ -10,7 +10,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', '8y-)xa3w3n$7)7vh&2)4j$f8o#d)s^f+i8_scvvx9e
 # DEBUG = os.getenv('DEBUG', 'True') == 'True'
 # ALLOWED_HOSTS = ['*']
 DEBUG = False
-ALLOWED_HOSTS = ['your-app-name.onrender.com']
+ALLOWED_HOSTS = ['ecommerce-backend-9sp9.onrender.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
